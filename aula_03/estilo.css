@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+  .grupo-form {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: left;
+    border-radius: 6px;
+  }
+
+  .grupo-form input,
+  .grupo-form select,
+  .grupo-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+
+  .grupo-form input[type="checkbox"],
+  .grupo-form input[type="radio"] {
+    margin-right: 4px;
+    margin-top: 0;
+  }
+
+  .grupo-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  
