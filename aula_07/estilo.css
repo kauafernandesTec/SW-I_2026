@@ -1,0 +1,81 @@
+/* 1. Centraliza o formulário na tela inteira */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centraliza horizontalmente */
+    justify-content: center;     /* Centraliza verticalmente */
+    min-height: 100vh;        /* Ocupa 100% da altura da tela */
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 2. Estiliza a caixa do formulário/resultado */
+form, main {
+    background-color: white;
+    padding: 40px;
+    border: 3px solid #333;   /* Borda externa forte */
+    border-radius: 20px;      /* Bordas arredondadas */
+    box-shadow: 8px 8px 0px #ccc; /* Sombra sólida */
+    
+    width: 100%;
+    max-width: 400px;         /* Limita a largura para não espalhar */
+    box-sizing: border-box;   /* Garante que o padding não quebre o layout */
+    
+    /* Garante que os itens dentro do form fiquem um abaixo do outro */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Centraliza e alinha os campos de texto */
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+input[type="text"] {
+    width: 100%;              /* Faz o campo ocupar toda a largura do form */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #333;   /* Borda nítida nos campos */
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;            /* Remove o contorno padrão do navegador */
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;    /* Borda azul ao clicar */
+}
+
+/* 4. Estilo do Botão */
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+    transform: scale(1.02);   /* Aumenta levemente ao passar o mouse */
+}
+
+/* Estilo do parágrafo de resultado (index.php) */
+p {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
